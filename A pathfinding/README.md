@@ -1,3 +1,4 @@
+
 Jeg har forsøgt med udgangspunkt i de 2 ovenstående artikler at lave mit eget.
 A* Pathfinding - hvad er det?
 
