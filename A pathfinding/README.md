@@ -57,7 +57,7 @@ Vores 'tile' vil have koordinaterne X og Y til rådighed og hver 'tile' vil få 
 **G** er *Movement Cost* fra *Udgangspunktet* til det nuværende 'tile'. Så for en 'tile' som er lige ved siden af *Udgangspunktet* vil denne få værdi 1, men dette vil stige jo længere væk vi kommer.
 
 For at kunne udregne G er vi nød til at tage G fra dens *Parent* (Den 'tile' vi kom fra) og ligge 1 til denne. Derfor vil G i hvert 'tile' repræsentere den totale *cost* for den genererede rute fra *udgangspunktet* til *destinationen*. Billedet nedenfor viser hvordan 2 forskellige ruter har forskellige værdier på hvert 'tile'
-![[Pasted image 20230801131602.png]]
+
 
 ### Mere om H 
 **H** er den estimerede *Movement Cost* fra det nuværende 'tile' til *Destinationen*. Denne bliver ofte kaldt for *heuristisk*, vi vil ikke kende den virkelige *cost* endnu - blåt estimeringen.
@@ -65,7 +65,7 @@ For at kunne udregne G er vi nød til at tage G fra dens *Parent* (Den 'tile' vi
 Jo tættere den estimerede *Movement Cost* er på den faktiske *Cost*, jo mere akkurat er den endelige rute. 
 Til dette benyttes *Manhattan Distance Method* også kaldet *Manhattan Length*/*City Block Distance*. Denne bruges til at tælle antallet af horisontale og vertikale 'tiles' der mangler for at nå *destinationen*, uden at tage udfordringer eller andre features ind i sammenhængen.
 Følgende billede viser **H**/ *City Block Distance* tallet i sort som er afstanden fra katten til knoglen.
-![[Pasted image 20230801132018.png]]
+
 
 At udregne **H** ser sådan ud:
 ```C#
@@ -87,8 +87,7 @@ Vores Walker vil finde den korteste rute ved at gøre følgende:
 	2. hvis **T** ikke er på *Open List*, tilføjes denne og dens score udregnes
 	3. hvis **T** allerede er på *Open List*: Check at F scoren er lavere end den nuværende rute til at nå denne, hvis det er, opdater den og dens *parents* score.
 ### Eksempel
-med udgangspunkt i dette billede:
-![[Pasted image 20230801133128.png]]
+
 
 I dette diagram er følgende score opsat på følgende måde:
 * **F**  Score for dette ' Grøn tile' - øverste venstre hjørne
@@ -98,7 +97,7 @@ I dette diagram er følgende score opsat på følgende måde:
 Pilene viser retning
 
 Katten vil gå efter den laveste **F** værdi og til sidst vil ruten se sådan ud:
-![[Pasted image 20230801133808.png]]
+
 
 ## Nu til Kodning!
 Som nævnt før har vi følgende ting med:
