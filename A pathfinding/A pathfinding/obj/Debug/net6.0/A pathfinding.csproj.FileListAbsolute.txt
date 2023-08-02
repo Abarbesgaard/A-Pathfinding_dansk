@@ -1,0 +1,15 @@
+C:\Users\45217\Desktop\A pathfinding\A pathfinding\A pathfinding\bin\Debug\net6.0\A pathfinding.exe
+C:\Users\45217\Desktop\A pathfinding\A pathfinding\A pathfinding\bin\Debug\net6.0\A pathfinding.deps.json
+C:\Users\45217\Desktop\A pathfinding\A pathfinding\A pathfinding\bin\Debug\net6.0\A pathfinding.runtimeconfig.json
+C:\Users\45217\Desktop\A pathfinding\A pathfinding\A pathfinding\bin\Debug\net6.0\A pathfinding.dll
+C:\Users\45217\Desktop\A pathfinding\A pathfinding\A pathfinding\bin\Debug\net6.0\A pathfinding.pdb
+C:\Users\45217\Desktop\A pathfinding\A pathfinding\A pathfinding\obj\Debug\net6.0\A pathfinding.csproj.AssemblyReference.cache
+C:\Users\45217\Desktop\A pathfinding\A pathfinding\A pathfinding\obj\Debug\net6.0\A pathfinding.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\45217\Desktop\A pathfinding\A pathfinding\A pathfinding\obj\Debug\net6.0\A pathfinding.AssemblyInfoInputs.cache
+C:\Users\45217\Desktop\A pathfinding\A pathfinding\A pathfinding\obj\Debug\net6.0\A pathfinding.AssemblyInfo.cs
+C:\Users\45217\Desktop\A pathfinding\A pathfinding\A pathfinding\obj\Debug\net6.0\A pathfinding.csproj.CoreCompileInputs.cache
+C:\Users\45217\Desktop\A pathfinding\A pathfinding\A pathfinding\obj\Debug\net6.0\A pathfinding.dll
+C:\Users\45217\Desktop\A pathfinding\A pathfinding\A pathfinding\obj\Debug\net6.0\refint\A pathfinding.dll
+C:\Users\45217\Desktop\A pathfinding\A pathfinding\A pathfinding\obj\Debug\net6.0\A pathfinding.pdb
+C:\Users\45217\Desktop\A pathfinding\A pathfinding\A pathfinding\obj\Debug\net6.0\A pathfinding.genruntimeconfig.cache
+C:\Users\45217\Desktop\A pathfinding\A pathfinding\A pathfinding\obj\Debug\net6.0\ref\A pathfinding.dll
