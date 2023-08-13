@@ -30,7 +30,7 @@ namespace A_pathfinding
         {
             var target = new Location { X = 12, Y = 2 };
             return target;
-        }
+        } 
 
         public Location GetRandomEndLocation()
         {

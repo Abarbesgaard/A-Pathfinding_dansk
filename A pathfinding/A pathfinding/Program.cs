@@ -12,7 +12,7 @@ namespace A_pathfinding
             map.DrawMap();
             location.SetStartingLocation();
             location.GetRandomEndLocation();
-            int SLEEP_TIME = 100;
+            int SLEEP_TIME = 100; 
             //===================================================================
             //      Algoritmen
             //===================================================================

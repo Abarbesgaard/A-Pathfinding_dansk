@@ -35,7 +35,7 @@ namespace A_pathfinding
         public void DrawMap()
         {
             foreach (var line in map)
-                Console.WriteLine(line);
+                Console.WriteLine(line); 
         }
     }
 }
