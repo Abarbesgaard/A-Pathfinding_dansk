@@ -6,27 +6,13 @@ namespace A_pathfinding
     {
         static void Main(string[] args)
         {
-
             Console.Title = ("A* Pathfinding");
-            string[] map = new string[]
-       {
-                "+------------+",
-                "|        X   |",
-                "|  X     X  B|",
-                "|  X     X   |",
-                "|  XX  X   X |",
-                "|A X     X   |",
-                "|            |",
-                "+------------+",
-       };
-            var start = new Location { X = 1, Y = 5 };
-            var target = new Location { X = 12, Y = 2 };
-
+            Map map  = new Map();
+            Location location = new Location();
+            map.DrawMap();
+            location.SetStartingLocation();
+            location.GetRandomEndLocation();
             int SLEEP_TIME = 100;
-
-            foreach (var line in map)
-                Console.WriteLine(line);
-
             //===================================================================
             //      Algoritmen
             //===================================================================
@@ -36,7 +22,7 @@ namespace A_pathfinding
             int g = 0;
 
             // Start med at tilføje den Udgangspunktet (start) til 'openList'
-            openList.Add(start);
+            openList.Add(location.SetStartingLocation());
 
             while (openList.Count > 0)
             {
@@ -57,10 +43,10 @@ namespace A_pathfinding
                 openList.Remove(current);
 
                 // hvis vi tilføjer destinationen til 'closedList, har vi fundet ruten;
-                if (closedList.FirstOrDefault(l => l.X == target.X && l.Y == target.Y) != null)
+                if (closedList.FirstOrDefault(l => l.X == location.GetRandomEndLocation().X && l.Y == location.GetRandomEndLocation().Y) != null)
                     break;
 
-                var adjacentSquares = GetWalkableAdjacentSquares(current.X, current.Y, map, openList);
+                var adjacentSquares = GetWalkableAdjacentSquares(current.X, current.Y, map.map, openList);
                 g = current.G + 1;
 
                 foreach (var adjacentSquare in adjacentSquares)
@@ -76,7 +62,7 @@ namespace A_pathfinding
                     {
                         //Udregn score og set 'parent'  
                         adjacentSquare.G = g;
-                        adjacentSquare.H = ComputeHScore(adjacentSquare.X, adjacentSquare.Y, target.X, target.Y);
+                        adjacentSquare.H = ComputeHScore(adjacentSquare.X, adjacentSquare.Y, location.GetRandomEndLocation().X, location.GetRandomEndLocation().Y);
                         adjacentSquare.F = adjacentSquare.G + adjacentSquare.H;
                         adjacentSquare.Parent = current;
 
